@@ -11,12 +11,19 @@ import { Calendar, CheckCircle, MapPin, Star, Users, Briefcase } from 'lucide-re
 import { format } from 'date-fns';
 import { RsvpStatus } from '@/lib/types';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 
 export default function EventDetailPage() {
   const params = useParams();
   const eventId = params.id as string;
   const event = useEventStore((state) => state.events.find((e) => e.id === eventId));
   const updateRsvp = useEventStore((state) => state.updateRsvp);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
 
   const handleRsvp = (status: RsvpStatus) => {
     if (event) {
@@ -83,7 +90,7 @@ export default function EventDetailPage() {
                     <Calendar className="h-6 w-6 text-primary mt-1 shrink-0" />
                     <div>
                         <h4 className="font-semibold">Date and Time</h4>
-                        <p className="text-muted-foreground">{format(new Date(event.date), 'eeee, MMMM d, yyyy')} at {format(new Date(event.date), 'p')}</p>
+                        <p className="text-muted-foreground">{isClient ? `${format(new Date(event.date), 'eeee, MMMM d, yyyy')} at ${format(new Date(event.date), 'p')}` : ' '}</p>
                     </div>
                 </div>
                  <div className="flex items-start gap-4">

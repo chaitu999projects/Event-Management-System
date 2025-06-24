@@ -5,12 +5,19 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/componen
 import type { Event } from '@/lib/types';
 import { Calendar, MapPin, Users, ArrowRight, Star, CheckCircle } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
+import { useEffect, useState } from 'react';
 
 interface EventCardProps {
   event: Event;
 }
 
 export function EventCard({ event }: EventCardProps) {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+  
   return (
     <Link href={`/events/${event.id}`} className="group block">
       <Card className="flex h-full flex-col overflow-hidden transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-1">
@@ -40,7 +47,7 @@ export function EventCard({ event }: EventCardProps) {
         <CardContent className="flex-grow space-y-3 px-6">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Calendar className="h-4 w-4" />
-            <span>{format(new Date(event.date), 'EEE, MMM d, yyyy')}</span>
+            <span>{isClient ? format(new Date(event.date), 'EEE, MMM d, yyyy') : ' '}</span>
           </div>
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <MapPin className="h-4 w-4" />
