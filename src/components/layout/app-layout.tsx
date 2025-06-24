@@ -28,20 +28,20 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
         <SidebarContent>
           <SidebarMenu>
             <SidebarMenuItem>
-              <Link href="/" legacyBehavior passHref>
-                <SidebarMenuButton asChild isActive={pathname === '/'} tooltip="Events">
+              <SidebarMenuButton asChild isActive={pathname === '/'} tooltip="Events">
+                <Link href="/">
                   <Home />
                   <span>Events</span>
-                </SidebarMenuButton>
-              </Link>
+                </Link>
+              </SidebarMenuButton>
             </SidebarMenuItem>
             <SidebarMenuItem>
-              <Link href="/create" legacyBehavior passHref>
-                <SidebarMenuButton asChild isActive={pathname === '/create'} tooltip="Create Event">
+              <SidebarMenuButton asChild isActive={pathname === '/create'} tooltip="Create Event">
+                <Link href="/create">
                   <PlusCircle />
                   <span>Create Event</span>
-                </SidebarMenuButton>
-              </Link>
+                </Link>
+              </SidebarMenuButton>
             </SidebarMenuItem>
           </SidebarMenu>
         </SidebarContent>
