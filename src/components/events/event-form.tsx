@@ -54,7 +54,7 @@ export function EventForm() {
     const newEvent = addEvent({
         ...data,
         date: data.date.toISOString(),
-        imageUrl: data.imageUrl || `https://placehold.co/1200x600.png?text=${encodeURIComponent(data.name)}`
+        imageUrl: data.imageUrl || `https://placehold.co/600x400.png`
     });
     toast({
         title: "Event Created!",
