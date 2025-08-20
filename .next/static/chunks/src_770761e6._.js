@@ -1430,7 +1430,7 @@ const initialEvents = [
         date: new Date('2024-09-20T12:00:00Z').toISOString(),
         location: 'Green Park, Downtown',
         description: 'Enjoy a day of live music, food trucks, and fun under the sun. Featuring local bands and artists across various genres. A perfect summer day out!',
-        imageUrl: 'https://placehold.co/1200x600.png',
+        imageUrl: 'https://i.pinimg.com/736x/29/a0/e0/29a0e08eaeaa034bae166ffc3eefd2b2.jpg',
         organizer: 'City Events Committee',
         attendees: {
             going: 2500,

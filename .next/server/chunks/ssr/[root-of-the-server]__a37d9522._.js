@@ -42,7 +42,7 @@ const initialEvents = [
         date: new Date('2024-10-10T10:00:00Z').toISOString(),
         location: 'Virtual Event',
         description: 'Join thousands of tech enthusiasts and professionals at the Global Tech Summit. Explore the latest trends in AI, blockchain, and cloud computing with industry leaders.',
-        imageUrl: 'https://placehold.co/600x400.png',
+        imageUrl: 'https://i.pinimg.com/736x/8d/fe/d1/8dfed1f283d6b13d9e3b9c425a7ffac6.jpg',
         organizer: 'Tech Innovations Inc.',
         attendees: {
             going: 1200,
@@ -57,7 +57,7 @@ const initialEvents = [
         date: new Date('2024-10-25T14:00:00Z').toISOString(),
         location: '123 Art Avenue, Metropia',
         description: 'Unleash your creativity in our hands-on coding workshop. Learn to build interactive art and visualizations using modern web technologies. No prior experience needed!',
-        imageUrl: 'https://placehold.co/600x400.png',
+        imageUrl: 'https://i.pinimg.com/1200x/ad/ae/f9/adaef999ca050fed8e1a5829f19fb7c1.jpg',
         organizer: 'Art & Code Collective',
         attendees: {
             going: 45,
@@ -72,7 +72,7 @@ const initialEvents = [
         date: new Date('2024-11-05T18:30:00Z').toISOString(),
         location: 'The Hub Co-working, Capital City',
         description: 'Connect with fellow startup founders, share your journey, and find potential collaborators. A great networking opportunity for entrepreneurs at any stage.',
-        imageUrl: 'https://placehold.co/600x400.png',
+        imageUrl: 'https://i.pinimg.com/1200x/93/7e/11/937e118c32c6fba038229ba3462f9847.jpg',
         organizer: 'Founder Circle',
         attendees: {
             going: 88,
@@ -87,7 +87,7 @@ const initialEvents = [
         date: new Date('2024-09-20T12:00:00Z').toISOString(),
         location: 'Green Park, Downtown',
         description: 'Enjoy a day of live music, food trucks, and fun under the sun. Featuring local bands and artists across various genres. A perfect summer day out!',
-        imageUrl: 'https://placehold.co/600x400.png',
+        imageUrl: 'https://i.pinimg.com/736x/29/a0/e0/29a0e08eaeaa034bae166ffc3eefd2b2.jpg',
         organizer: 'City Events Committee',
         attendees: {
             going: 2500,
